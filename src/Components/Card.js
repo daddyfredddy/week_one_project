@@ -2,8 +2,11 @@ import React from "react";
 
 function Card(props) {
   return (
-    <div className="container">
-      <div className="column">
+    <div className={props.color}>
+      <img src={props.imgUrl} alt="icon" />
+      <h2>{props.name}</h2>
+      <p>{props.body}</p>
+      {/* <div className="column">
         <div id="col1">
           <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fill-rule="evenodd">
@@ -62,7 +65,7 @@ function Card(props) {
           </p>
           <button className="btn">Learn More</button>
         </div>
-      </div>{" "}
+      </div>{" "} */}
     </div>
   );
 }
